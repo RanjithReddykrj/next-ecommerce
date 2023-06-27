@@ -6,7 +6,9 @@ export default async function({searchParams}:SearchParamTypes){
     return(
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 p-12 ">
           <div className="px-10 py-4">
-            <Image src={searchParams.image} alt={searchParams.name} width={600} height={600} className="w-full h-96 object-cover rounded-lg"/>
+            <Image src={searchParams.image} alt={searchParams.name} width={600} height={600} 
+            priority={true}
+            className="w-full h-96 object-cover rounded-lg"/>
           </div>
 
 
