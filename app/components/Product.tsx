@@ -19,8 +19,8 @@ export default function Product({id,
             <Image priority={true} src={image} alt={name} width={800} height={800} className="w-full h-96 object-cover rounded-lg"/>
             <div className="font-medium py-2">
             <h1>{name}</h1>
-            <h2>{description}</h2>
-            <h2>{features}</h2>
+            {/* <h2>{description}</h2>
+            <h2>{features}</h2> */}
             <h2 className="text-sm text-primary">{unit_amount != null ? formatPrice(unit_amount):'N/A'}</h2>
 
             </div>
